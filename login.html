@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Artizan - Login</title>
+
+  <!-- my css file that all the pages use -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- internal css, only for this page -->
+  <style type="text/css">
+    .banner {
+      background-image: url(images/pottery.jpg);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- header: logo + menu (same in every page) -->
+  <header>
+    <div class="content">
+      <div class="logo">
+        <!-- I used image map so the logo opens the about us page -->
+        <img src="logo.png" alt="Artizan logo" width="150" height="109" usemap="#logomap">
+        <map name="logomap">
+          <area shape="rect" coords="0,0,150,109" href="about.html" alt="About Artizan">
+        </map>
+      </div>
+
+      <nav class="menu">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li>
+            <a href="about.html">About Us</a>
+            <ul>
+              <li><a href="about.html#story">Our Story</a></li>
+              <li><a href="about.html#goals">Our Goals</a></li>
+              <li><a href="about.html#team">Our Team</a></li>
+            </ul>
+          </li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- banner: photo + dark layer + text -->
+  <div class="banner" id="top">
+    <div class="layer"></div>
+    <div class="content banner-text">
+      <h1>Welcome Back</h1>
+      <p>Log in to your Artizan account.</p>
+    </div>
+  </div>
+
+  <!-- login form -->
+  <section class="box form-box">
+    <h2 class="center">Log In</h2>
+
+    <form method="post" action="#">
+      <p>
+        <label>Email:<br>
+          <input type="email" name="email" placeholder="name@example.com" size="40" autofocus required>
+        </label>
+      </p>
+      <p>
+        <label>Password:<br>
+          <input type="password" name="password" size="40" required>
+        </label>
+      </p>
+      <p>
+        <input type="checkbox" name="remember" value="yes">
+        <label>Remember me</label>
+      </p>
+      <p>
+        <input type="submit" value="Log In" class="button">
+        <input type="reset" value="Clear" class="button">
+      </p>
+    </form>
+
+    <p class="center">New to Artizan? <a href="signup.html">Create an account</a></p>
+  </section>
+
+  <!-- footer (same in every page) -->
+  <footer>
+    <h3>Artizan</h3>
+    <p>
+      <a href="home.html">Home</a> |
+      <a href="about.html">About Us</a> |
+      <a href="login.html">Login</a> |
+      <a href="signup.html">Sign Up</a>
+    </p>
+    <p>&copy; 2026 Artizan - All rights reserved | <a href="#top">Back to top</a></p>
+  </footer>
+
+</body>
+</html>
