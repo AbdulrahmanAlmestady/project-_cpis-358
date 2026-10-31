@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Artizan - Sign Up</title>
+
+  <!-- link with css file -->
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+ 
+  <style type="text/css">
+    .banner {
+      background-image: url(workshop.jpg);
+    }
+    .form-box {
+      width: 50%;
+      margin-left: 25%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- header -->
+  <header>
+    <div class="content">
+      <div class="logo">
+        <!-- logo goes to about us -->
+        <a href="about.html">
+          <img src="logo.png" alt="Artizan logo" width="150" height="109">
+        </a>
+      </div>
+
+      <nav class="menu">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li>
+            <a href="about.html">About Us</a>
+            <ul>
+              <li><a href="about.html#story">Our Story</a></li>
+              <li><a href="about.html#goals">Our Goals</a></li>
+              <li><a href="about.html#team">Our Team</a></li>
+            </ul>
+          </li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+ <!-- photo -->
+  <div class="banner" id="top">
+    <div class="layer"></div>
+    <div class="content banner-text">
+      <h1>Join Artizan</h1>
+      <p>Create a free account as a customer or as a seller.</p>
+    </div>
+  </div>
+
+  <!-- form -->
+  <section class="box form-box">
+    <h2 class="center">Create Account</h2>
+
+    <form method="post" action="#">
+      <p>Account type:</p>
+      <p>
+        <input type="radio" name="type" value="customer" checked>
+        <label>I want to buy products</label><br>
+        <input type="radio" name="type" value="seller">
+        <label>I want to sell my products</label>
+      </p>
+
+      <p>
+        <label>Full name:<br>
+          <input type="text" name="name" size="45" maxlength="50" autofocus required>
+        </label>
+      </p>
+      <p>
+        <label>Email:<br>
+          <input type="email" name="email" placeholder="name@example.com" size="45" required>
+        </label>
+      </p>
+      <p>
+        <label>Mobile number:<br>
+          <input type="tel" name="phone" placeholder="05XXXXXXXX" pattern="05[0-9]{8}" size="45" required>
+        </label>
+      </p>
+      <p>
+        <label>Region:<br>
+          <select name="region">
+            <option>Makkah</option>
+            <option>Riyadh</option>
+            <option>Eastern Province</option>
+            <option>Madinah</option>
+            <option>Other</option>
+          </select>
+        </label>
+      </p>
+      <p>
+        <label>Password:<br>
+          <input type="password" name="password" size="45" required>
+        </label>
+      </p>
+      <p>
+        <label>Confirm password:<br>
+          <input type="password" name="password2" size="45" required>
+        </label>
+      </p>
+      <p>
+        <input type="checkbox" name="terms" value="yes" required>
+        <label>I agree to the terms</label>
+      </p>
+      <p>
+        <input type="submit" value="Sign Up" class="button">
+        <input type="reset" value="Clear" class="button">
+      </p>
+    </form>
+
+    <p class="center">Already have an account? <a href="login.html">Log in</a></p>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <h3>Artizan</h3>
+    <p>
+      <a href="home.html">Home</a> |
+      <a href="about.html">About Us</a> |
+      <a href="login.html">Login</a> |
+      <a href="signup.html">Sign Up</a>
+    </p>
+    <p>&copy; 2026 Artizan - All rights reserved | <a href="#top">Back to top</a></p>
+  </footer>
+
+</body>
+</html>
