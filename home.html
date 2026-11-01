@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Artizan - Home</title>
+  <meta name="description" content="Online store for home-based families">
+  <meta name="keywords" content="handmade, artisans, home-based families">
+  <meta name="author" content="Omar Samkari, Abdulrahman Almestady">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- styles only for this page -->
+  <style type="text/css">
+    .left {
+      float: left;
+      width: 42%;
+    }
+    .right {
+      float: right;
+      width: 42%;
+    }
+    .boxes {
+      height: 260px;
+    }
+    .tall {
+      height: 320px;
+    }
+    .photo {
+      float: right;
+      margin-left: 20px;
+      border: 5px solid white;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="content">
+      <div class="logo">
+        <!-- click the logo to go to about us page -->
+        <a href="about.html">
+          <img src="logo.png" alt="Artizan logo" width="150" height="109">
+        </a>
+      </div>
+
+      <nav class="menu">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li>
+            <a href="about.html">About Us</a>
+            <ul>
+              <li><a href="about.html#story">Our Story</a></li>
+              <li><a href="about.html#goals">Our Goals</a></li>
+              <li><a href="about.html#team">Our Team</a></li>
+            </ul>
+          </li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- big photo at the top -->
+  <div class="banner" id="top">
+    <div class="layer"></div>
+    <div class="content banner-text">
+      <h1>Crafting a digital presence for artisans</h1>
+      <p>Artizan brings home-based families into one trusted online store.</p>
+      <p><a href="signup.html" class="button">Join Artizan</a></p>
+    </div>
+  </div>
+
+  <!-- links to jump to each part of the page -->
+  <p class="center">
+    <a href="#idea">The Idea</a> |
+    <a href="#benefits">Benefits</a> |
+    <a href="#how">How It Works</a> |
+    <a href="#compare">Why Artizan</a>
+  </p>
+
+  <!-- the idea part -->
+  <section class="part" id="idea">
+    <article class="content tall">
+      <img class="photo" src="pottery.jpg" alt="Making a clay cup by hand" width="230" height="300">
+      <h2>What is Artizan?</h2>
+      <p>Many families make beautiful products at home, but they can not reach customers outside their area.</p>
+      <p>Most of them sell only on social media. Orders are written by hand in chats, and mistakes and delays happen a lot.</p>
+      <p>Artizan gives these families <strong>one website</strong> to show their products, receive orders and get ratings from customers.</p>
+    </article>
+  </section>
+
+  <!-- benefits part -->
+  <section class="part light" id="benefits">
+    <div class="content">
+      <h2 class="center">Who Benefits from Artizan?</h2>
+      <div class="boxes">
+      <article class="box left">
+        <h3>Home-Based Families</h3>
+        <ul>
+          <li>Show their products in one place.</li>
+          <li>Reach customers in other cities.</li>
+          <li>Manage orders easily.</li>
+          <li>Get a more stable income.</li>
+        </ul>
+      </article>
+      <article class="box right">
+        <h3>Customers</h3>
+        <ul>
+          <li>Find real handmade products.</li>
+          <li>See clear prices and photos.</li>
+          <li>Read reviews from other buyers.</li>
+          <li>Support local families.</li>
+        </ul>
+      </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- how it works steps -->
+  <section class="part" id="how">
+    <div class="content">
+      <h2 class="center">How It Works</h2>
+      <ol class="box">
+        <li><strong>Join:</strong> the family creates a free account.</li>
+        <li><strong>Add:</strong> they upload photos and prices of their products.</li>
+        <li><strong>Order:</strong> customers choose products and order them.</li>
+        <li><strong>Review:</strong> the buyer gets the order and leaves a rating.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- compare table -->
+  <section class="part light" id="compare">
+    <div class="content">
+      <h2 class="center">Why Artizan and Not Only Social Media?</h2>
+      <table>
+        <caption>Comparison</caption>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Social Media</th>
+            <th>Artizan</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td colspan="3">Result: more customers and more income for every family</td>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <td>Reach</td>
+            <td>People in the same area</td>
+            <td>Customers from all regions</td>
+          </tr>
+          <tr>
+            <td>Orders</td>
+            <td>Written in chats</td>
+            <td>Organized in one page</td>
+          </tr>
+          <tr>
+            <td>Trust</td>
+            <td>Hard to know the seller</td>
+            <td>Ratings and reviews</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <h3>Artizan</h3>
+    <p>
+      <a href="home.html">Home</a> |
+      <a href="about.html">About Us</a> |
+      <a href="login.html">Login</a> |
+      <a href="signup.html">Sign Up</a>
+    </p>
+    <p>&copy; 2026 Artizan - All rights reserved | <a href="#top">Back to top</a></p>
+  </footer>
+
+</body>
+</html>

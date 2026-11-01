@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Artizan - About Us</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- styles only for this page -->
+  <style type="text/css">
+    .banner {
+      background-image: url(workshop.jpg);
+    }
+    .photo {
+      float: left;
+      margin-right: 20px;
+      border: 5px solid white;
+      border-radius: 15px;
+      box-shadow: 5px 5px 15px gray;
+    }
+    .half {
+      width: 42%;
+      float: left;
+      margin-right: 3%;
+      border-top: 5px solid #7b5a3f;
+    }
+    .boxes {
+      height: 180px;
+    }
+    .tall {
+      height: 280px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="content">
+      <div class="logo">
+        <!-- click the logo to go to about us page -->
+        <a href="about.html">
+          <img src="logo.png" alt="Artizan logo" width="150" height="109">
+        </a>
+      </div>
+
+      <nav class="menu">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li>
+            <a href="about.html">About Us</a>
+            <ul>
+              <li><a href="about.html#story">Our Story</a></li>
+              <li><a href="about.html#goals">Our Goals</a></li>
+              <li><a href="about.html#team">Our Team</a></li>
+            </ul>
+          </li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- big photo at the top -->
+  <div class="banner" id="top">
+    <div class="layer"></div>
+    <div class="content banner-text">
+      <h1>About Artizan</h1>
+      <p>Our story, our goals and our team.</p>
+    </div>
+  </div>
+
+  <!-- links to jump to each part of the page -->
+  <p class="center">
+    <a href="#story">Our Story</a> |
+    <a href="#mission">Mission &amp; Vision</a> |
+    <a href="#goals">Goals</a> |
+    <a href="#team">Our Team</a>
+  </p>
+
+  <!-- our story part -->
+  <section class="part" id="story">
+    <article class="content tall">
+      <img class="photo" src="workshop.jpg" alt="Artisans working in a home workshop" width="400" height="238">
+      <h2>Our Story</h2>
+      <p>Many families make amazing things at home, but very few people see them.</p>
+      <p>These families sell through social media, and their customers are usually in the same city.</p>
+      <!-- i used inline css here -->
+      <p>We created <strong>Artizan</strong> to connect these families with customers. The hand in our logo means <em style="color: #7b5a3f;">work made by hand with care</em>.</p>
+    </article>
+  </section>
+
+  <!-- mission and vision part -->
+  <section class="part light" id="mission">
+    <div class="content">
+      <h2 class="center">Mission &amp; Vision</h2>
+      <div class="boxes">
+      <article class="box half">
+        <h3>Our Mission</h3>
+        <p>To help home-based families sell their handmade products online.</p>
+      </article>
+      <article class="box half">
+        <h3>Our Vision</h3>
+        <p>To be the first trusted place in Saudi Arabia for handmade products.</p>
+      </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- our goals -->
+  <section class="part" id="goals">
+    <div class="content">
+      <h2 class="center">Our Goals</h2>
+      <ol class="box">
+        <li>Give home-based families one website to sell on.</li>
+        <li>Help local sellers reach more customers.</li>
+        <li>Increase the income of small home businesses.</li>
+        <li>Make ordering easy for customers.</li>
+        <li>Build trust with ratings and reviews.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- team members -->
+  <section class="part light" id="team">
+    <div class="content">
+      <h2 class="center">Our Team</h2>
+      <table>
+        <caption>Team members</caption>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Omar Samkari</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Abdulrahman Almestady</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <h3>Artizan</h3>
+    <p>
+      <a href="home.html">Home</a> |
+      <a href="about.html">About Us</a> |
+      <a href="login.html">Login</a> |
+      <a href="signup.html">Sign Up</a>
+    </p>
+    <p>&copy; 2026 Artizan - All rights reserved | <a href="#top">Back to top</a></p>
+  </footer>
+
+</body>
+</html>
