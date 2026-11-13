@@ -31,6 +31,11 @@
       height: 280px;
     }
   </style>
+
+  <!--  java script file -->
+    <script src="script.js"></script>
+
+
 </head>
 <body>
 
@@ -62,11 +67,11 @@
   </header>
 
   <!-- big photo at the top -->
-  <div class="banner" id="top">
+  <div class="banner" id="top" onclick="changeLoginBanner()">
     <div class="layer"></div>
     <div class="content banner-text">
-      <h1>About Artizan</h1>
-      <p>Our story, our goals and our team.</p>
+      <h1 id="bannerTitle">About Artizan</h1>
+      <p id="bannerLine">Our story, our goals and our team.</p>
     </div>
   </div>
 

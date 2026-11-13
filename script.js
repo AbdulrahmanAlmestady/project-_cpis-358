@@ -23,4 +23,3 @@ function changeLoginBanner() {
   document.getElementById("bannerLine").innerHTML = "Welcome back to Artizan!";
 }
 
-document.getElementById("top").onclick = changeLoginBanner;
