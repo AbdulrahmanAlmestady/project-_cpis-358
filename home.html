@@ -32,6 +32,30 @@
       border-radius: 15px;
     }
   </style>
+
+  <script>
+  function addReview() {
+    //what the user write
+    var name = document.getElementById("reviewName").value;
+    var text = document.getElementById("reviewText").value;
+
+    // check that the fields are not empty
+    if (name == "" || text == "") {
+      document.getElementById("reviewMessage").innerHTML = "Please write your name and your comment.";
+      document.getElementById("reviewMessage").style.color = "red";    
+
+    } else {
+      // add a new box to the page 
+      document.getElementById("reviewList").innerHTML += "<div class='box'><h3>" + name + "</h3><p>" + text + "</p></div>";
+
+      // show a message 
+      document.getElementById("reviewMessage").innerHTML = "Thank you for your review!";
+      document.getElementById("reviewMessage").style.color = "green";  
+      document.getElementById("reviewName").value = "";
+      document.getElementById("reviewText").value = "";
+    }
+  }
+</script>
 </head>
 <body>
 
@@ -169,6 +193,35 @@
       </table>
     </div>
   </section>
+
+  <!-- customer reviews -->
+<section class="part" id="reviews">
+  <div class="content">
+    <h2 class="center">Customer Reviews</h2>
+
+    <form class="box form-box">
+      <p>
+        <label>Your name:<br>
+          <input type="text" id="reviewName" size="30">
+        </label>
+      </p>
+      <p>
+        <label>Comment:<br>
+          <input type="text" id="reviewText" size="40">
+        </label>
+      </p>
+      <p>
+        <input type="button" value="Add Review" class="button" onclick="addReview()">
+      </p>
+      <p id="reviewMessage"></p>
+    </form>
+
+    <!-- new reviews -->
+
+    <div id="reviewList"></div>
+  </div>
+
+</section>
 
   <footer>
     <h3>Artizan</h3>
