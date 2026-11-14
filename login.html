@@ -67,15 +67,15 @@
   <section class="box form-box">
     <h2 class="center">Log In</h2>
 
-    <form method="post" action="#">
+    <form name="loginForm" method="post" action="#" onsubmit="return validateLogin()">
       <p>
         <label>Email:<br>
-          <input type="email" name="email" placeholder="name@example.com" size="40" autofocus required>
+          <input type="email" name="email" placeholder="name@example.com" size="40" autofocus >
         </label>
       </p>
       <p>
         <label>Password:<br>
-          <input type="password" name="password" size="40" required>
+          <input type="password" name="password" size="40" >
         </label>
       </p>
       <p>
